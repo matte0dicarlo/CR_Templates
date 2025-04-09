@@ -84,8 +84,8 @@ spec:
     - securityRoles.#.group1.createAddress=true
     - securityRoles.#.group1.createNonDurableQueue=true
     - securityRoles.#.group1.browse=true
-    - securityRoles."mops.address.activemq.management.*".manager.view=true
-    - securityRoles."mops.address.activemq.management.*".manager.edit=true
+    - securityRoles.mops.address.activemq.management.*.manager.view=true
+    - securityRoles.mops.address.activemq.management.*.manager.edit=true
   console:
     expose: true
   deploymentPlan:
